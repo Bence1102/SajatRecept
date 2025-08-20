@@ -27,11 +27,11 @@ export default class Receptkep {
                   </div>
         `;
             this.#szuloElem.appendChild(kep);
-            kep.querySelector(".elozo").addEventListener("click", () => {
+            kep.querySelector(".vissza").addEventListener("click", () => {
             this.#index = (this.#index - 1 + this.#lista.length) % this.#lista.length;
             this.megjelenit();
         });
-        kep.querySelector(".kovetkezo").addEventListener("click", () => {
+        kep.querySelector(".elore").addEventListener("click", () => {
             this.#index = (this.#index + 1) % this.#lista.length;
             this.megjelenit();
         });
