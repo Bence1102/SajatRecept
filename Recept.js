@@ -1,10 +1,9 @@
-import { receptLista } from './receptek.js';
 export default class Recept {
     #lista = [];
     #szuloElem;
-    constructor(szuloElem) {
+    constructor(lista,szuloElem) {
         this.#szuloElem = szuloElem;
-        this.#lista = receptLista;
+        this.#lista = lista;
         this.megjelenit();
     }
 
